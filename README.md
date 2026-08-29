@@ -1,11 +1,11 @@
 # Physics-Aware GraphRAG: Composing Multi-Dimensional World Models
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-[![Python Version](https://shields.io)](https://python.org)
-[![Framework: LangGraph](https://shields.io)](https://github.com)
-[![Database: Neo4j](https://shields.io)](https://neo4j.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Framework: LangGraph](https://img.shields.io/badge/Framework-LangGraph-orange.svg)](https://github.com/langchain-ai/langgraph)
+[![Database: Neo4j](https://img.shields.io/badge/Database-Neo4j-blueviolet.svg)](https://neo4j.com/)
 
-An production-pattern Proof-of-Concept (PoC) demonstrating **Spatiotemporal GraphRAG governed by Explicit Graph Engineering and Physics-Informed Neural Networks (PINNs)**. 
+A production-pattern Proof-of-Concept (PoC) demonstrating **Spatiotemporal GraphRAG governed by Explicit Graph Engineering and Physics-Informed Neural Networks (PINNs)**. 
 
 This repository implements a "World AI" blueprint that embeds reality as a continuous, interconnected network fabric of composable dimensions layered into a single knowledge graph. By forcing LLM retrieval agents to operate inside strict mathematical boundaries and deterministic state machines, this architecture completely eradicates unconstrained agent hallucinations during multi-hazard cascade tracking.
 
@@ -14,12 +14,53 @@ This repository implements a "World AI" blueprint that embeds reality as a conti
 ## 🌌 The Multi-Dimensional Architecture
 
 Large Language Models are excellent text articulators, but they are natively blind to physical invariants, causality, and temporal progression. This framework scales retrieval into higher dimensional spaces (5D, 6D+) to bind autonomous predictions to real-world conservation laws:
-<img width="653" height="860" alt="image" src="https://github.com/user-attachments/assets/5cbbb39c-e6ad-4eeb-b8c7-25cb23805fdf" />
 
+```text
+     [ GEOSPATIAL FIELD DATA ]         [ MATHEMATICAL INVARIANTS / LAWS ]
+   (NWSS Metrics, NOAA Fluid Feeds)     (SIR ODEs, Navier-Stokes, Heat Eq)
+                 │                                       │
+                 ▼                                       ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                  PINN LOSS-REGULATED EMBEDDING GATEWAY                       │
+│  - Solves Residual Derivatives (f = dI/dt - (beta*S*I - gamma*I) = 0)        │
+│  - Guarantees Physical Conservation Bounds Before Ingestion                  │
+└────────────────────────────────┬─────────────────────────────────────────────┘
+                                 │
+                                 ▼ (Physically-Consistent State Vectors)
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                    SPATIOTEMPORAL KNOWLEDGE GRAPH FABRIC                     │
+│  - Uber H3 Geospatial Cells          - Explicit Ancestral & Version Edges    │
+│  - Sliding Temporal Graph Windows    - Multi-Field Covariation Metrics       │
+└────────────────────────────────┬─────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                   SHARED WORKFLOW STATE OBJECT (LANGGRAPH)                   │
+│  { inputs, active_h3_cells, physics_residuals, cypher_query, audit_trail }   │
+└────────────────────────────────┬─────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                  FORMAL AGENTIC CONTROL GRAPH ENGINE                         │
+│                                                                              │
+│    ┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐   │
+│    │ Entity-Extract  │ ────► │ Cypher-Gen Node │ ────► │ Execution Node  │   │
+│    │      Node       │       └────────┬────────┘       └────────┬────────┘   │
+│    └─────────────────┘                │                         │            │
+│             ▲                         ▼ Conditional Route       ▼            │
+│             │                ┌─────────────────┐       ┌────────┴────────┐   │
+│             └────────────────┤  Syntax Fixer   │       │ Deterministic   │   │
+│                 Retry Loop   │      Node       │       │ Quality Gate    │   │
+│                              └─────────────────┘       └────────┬────────┘   │
+│                                                                 │            │
+│                                                                 ▼            │
+│                                                        [ Verified Output ]   │
+└──────────────────────────────────────────────────────────────────────────────┘
+```
 
 1. **3D Space (Spatial Field):** Geographic coordinates are mapped precisely via an inspectable visual grid leveraging **Uber H3 Hexagonal Indexing**.
 2. **4D Time (Temporal Progression):** Shifting state telemetry points are linked via chronological sequence markers (`[:NEXT_STATE]`), enabling native execution tracing for "what was true then."
-3. **5D Physical Invariants (PINN Constraints):** Prior to data ingestion, telemetry parameters pass through neural differential solvers to minimize physical residual losses (\(\frac{dI}{dt} - (\beta SI - \gamma I) = 0\)). Inputs that violate thermodynamics or epidemic conservation models are flagged.
+3. **5D Physical Invariants (PINN Constraints):** Prior to data ingestion, telemetry parameters pass through neural differential solvers to minimize physical residual losses. Inputs that violate thermodynamics or epidemic conservation models are flagged.
 4. **6D Intent & Causality (Graph Engineering):** A deterministic multi-agent state graph isolates execution scopes, evaluates strict quality metrics, and handles runtime failures automatically via validation loops.
 
 ---
@@ -64,7 +105,7 @@ Ensure an active, local or cloud-native Neo4j Database instance is accessible vi
 
 ### 2. Clone Repository & Install Manifest
 ```bash
-git clone https://github.com
+git clone https://github.com/yourusername/physics-aware-graphrag.git
 cd physics-aware-graphrag
 pip install -r requirements.txt
 ```
