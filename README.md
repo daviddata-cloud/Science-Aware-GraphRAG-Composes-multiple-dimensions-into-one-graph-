@@ -12,10 +12,8 @@ This repository implements a "World AI" blueprint that embeds reality as a conti
 ---
 
 ## 🌌 The Multi-Dimensional Architecture
-Linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7499558786852917248/
 
 Large Language Models are excellent text articulators, but they are natively blind to physical invariants, causality, and temporal progression. This framework scales retrieval into higher dimensional spaces (5D, 6D+) to bind autonomous predictions to real-world conservation laws:
-<img width="653" height="860" alt="image" src="https://github.com/user-attachments/assets/a3e8c49f-1193-4e19-9fc7-edbde270ea5b" />
 
 ```text
      [ GEOSPATIAL FIELD DATA ]         [ MATHEMATICAL INVARIANTS / LAWS ]
